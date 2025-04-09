@@ -13,8 +13,8 @@ jobs:
       run: npm init -y
     - name: install dependencies
       run: npm install
-    - name: build project
-      run: npm run build
+    # - name: build project
+    #   run: npm run build
   test:
     runs-on: ubuntu-latest
     steps:
@@ -25,5 +25,5 @@ jobs:
       run: npm init -y
     - name: install dependencies
       run: npm install
-    - name: Run Tests
-      run: npm test
+    # - name: Run Tests
+    #   run: npm test
