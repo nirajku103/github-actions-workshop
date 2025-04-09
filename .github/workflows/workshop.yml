@@ -9,6 +9,8 @@ jobs:
     # $GITHUB_WORKSPACE
     - name: checkout code
       uses: actions/checkout@v4.2.2
+    - name: initialize npm
+      run: npm init -y
     - name: install dependencies
       run: npm install
     - name: build project
@@ -19,6 +21,8 @@ jobs:
     # $GITHUB_WORKSPACE
     - name: checkout
       uses: actions/checkout@v$.2.2
+    - name: initialize npm
+      run: npm init -y
     - name: install dependencies
       run: npm install
     - name: Run Tests
