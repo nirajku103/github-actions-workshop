@@ -20,7 +20,7 @@ jobs:
     steps:
     # $GITHUB_WORKSPACE
     - name: checkout
-      uses: actions/checkout@v$.2.2
+      uses: actions/checkout@v4.2.2
     - name: initialize npm
       run: npm init -y
     - name: install dependencies
