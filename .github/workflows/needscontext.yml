@@ -1,4 +1,4 @@
-name: input-context
+name: needs-context
 on:
   workflow_dispatch
 
