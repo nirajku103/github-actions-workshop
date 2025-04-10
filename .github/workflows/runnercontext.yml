@@ -18,3 +18,23 @@ jobs:
         with:
           name: Build failure logs
           path: ${{ runner.temp }}/build_logs
+
+  
+  get-runner-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display runner info
+        run: |
+          echo "Runner name: ${{ runner.name }}"
+          echo "Runner OS: ${{ runner.os }}"
+          echo "Runner temp: ${{ runner.temp }}"
+          echo "Runner workspace: ${{ runner.workspace }}"
+          echo "Runner group: ${{ runner.group }}"
+          echo "Runner labels: ${{ runner.labels }}"
+          echo "Runner version: ${{ runner.version }}"
+          echo "Runner tools cache: ${{ runner.tools_cache }}"
+          echo "Runner job workspace: ${{ runner.job_workspace }}"
+          echo "Runner job id: ${{ runner.job_id }}"
+          echo "Runner job name: ${{ runner.job_name }}"
+          echo "Runner job status: ${{ runner.job_status }}"
+          echo "Runner job url: ${{ runner.job_url }}"
