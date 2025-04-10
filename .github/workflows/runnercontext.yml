@@ -5,6 +5,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MY_VAR: 'jobs'
     steps:
       - uses: actions/checkout@v4
       - name: Build with logs
@@ -23,7 +25,7 @@ jobs:
   get-runner-info:
     runs-on: ubuntu-latest
     env:
-      MY_VAR: 'jobs'
+      MY_VAR: 'steps'
     steps:
       - name: Display runner info
         # env: 
