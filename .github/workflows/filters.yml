@@ -12,4 +12,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - run: echo "testing filters"
+   - run: echo "testing successful"
+
    
