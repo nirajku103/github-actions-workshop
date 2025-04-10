@@ -1,0 +1,23 @@
+name: Matrix
+on: 
+ workflow_dispatch
+
+jobs:
+ matrix-test:
+  runs-on: ${{matrix.os}}
+  strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        - windows-latest
+        node-versions: [v21, v22]
+
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{matrix.node-version}}
+    - name: Perform test
+      run: echo 'Display ${{matrix.os}} and ${{matrix.node-version}}'
+        
+    
