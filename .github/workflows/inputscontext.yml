@@ -22,3 +22,11 @@ jobs:
     if: ${{ failure() }}
     steps:
       - run: echo "Failed to build and deploy"
+
+  success:
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+    steps:
+      - run: echo "Failed to build and deploy"
+
