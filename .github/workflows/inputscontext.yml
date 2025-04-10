@@ -16,12 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying build ${{ needs.build.outputs.build_id }}"
-  debug:
-    needs: [build, deploy]
-    runs-on: ubuntu-latest
-    if: ${{ failure() }}
-    steps:
-      - run: echo "Failed to build and deploy"
 
   success:
     needs: [build, deploy]
@@ -29,4 +23,12 @@ jobs:
     if: ${{ success() }}
     steps:
       - run: echo "Failed to build and deploy"
+  debug:
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    if: ${{ failure() }}
+    steps:
+      - run: echo "Failed to build and deploy"
+
+
 
