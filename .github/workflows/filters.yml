@@ -5,7 +5,7 @@ on:
   # branches-ignore:
   #   - main
   branches:
-    - feature-branch
+    - main
 
 jobs:
  filters:
