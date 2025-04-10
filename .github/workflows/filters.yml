@@ -1,17 +1,17 @@
-name: Filters
+# name: Filters
 
-on:
- push:
-  # branches-ignore:
-  #   - main
-  branches:
-    - main
+# on:
+#  push:
+#   # branches-ignore:
+#   #   - main
+#   branches:
+#     - main
 
-jobs:
- filters:
-  runs-on: ubuntu-latest
-  steps:
-   - run: echo "testing filters"
-   - run: echo "testing successful"
+# jobs:
+#  filters:
+#   runs-on: ubuntu-latest
+#   steps:
+#    - run: echo "testing filters"
+#    - run: echo "testing successful"
 
    
