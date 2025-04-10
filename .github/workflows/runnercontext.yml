@@ -26,8 +26,8 @@ jobs:
       MY_VAR: 'jobs'
     steps:
       - name: Display runner info
-        env: 
-        MY_VAR: 'steps'
+        # env: 
+        # MY_VAR: 'steps'
         run: |
           echo "Runner name: ${{ runner.name }}"
           echo "Runner OS: ${{ runner.os }}"
