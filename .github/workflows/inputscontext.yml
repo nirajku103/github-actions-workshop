@@ -1,4 +1,4 @@
-name: Build and deploy
+name: input-context
 on:
   workflow_dispatch
 
