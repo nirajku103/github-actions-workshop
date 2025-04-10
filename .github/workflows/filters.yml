@@ -1,0 +1,13 @@
+name: Filters
+
+on:
+ push:
+  branches-ignore:
+    - main
+
+jobs:
+ filters:
+  runs-on: ubuntu-latest
+  steps:
+   - run: echo "testing filters"
+   
