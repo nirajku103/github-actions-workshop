@@ -1,0 +1,25 @@
+name: GitHub Context
+
+on:
+ workflow_dispatch:
+env: 
+ MY_VAR: 'workflow'
+
+jobs:
+ echo-github-context:
+  runs-on: ubuntu-latest
+  env: 
+   MY_VAR: 'jobs'
+  steps:
+    - name: "Display Info"
+      env: 
+        MY_VAR: 'steps'
+      run: |
+       echo 'Event name ${{github.event_name}}'
+       echo 'Reference details ${{github.ref}}'
+       echo 'ref name ${{github.ref_name}}'
+       echo 'Commit SHA ${{github.sha}}'
+       echo 'Run Id ${{github.run_id}}'
+       echo 'Run number ${{github.run_number}}'
+       echo '${{env.MY_VAR}}'
+      
