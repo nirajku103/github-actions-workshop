@@ -4,12 +4,15 @@ on:
       build_id:
         required: true
         type: string
+        default: "default-build-id"
       deploy_target:
         required: true
         type: string
+        default: "default-target"
       perform_deploy:
         required: true
         type: boolean
+        default: false
 
 jobs:
   deploy:
