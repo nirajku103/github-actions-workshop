@@ -1,4 +1,4 @@
-name: Generate random failure
+name: steps-context
 on:
   workflow_dispatch
 jobs:
