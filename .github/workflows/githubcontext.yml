@@ -22,4 +22,5 @@ jobs:
        echo 'Run Id ${{github.run_id}}'
        echo 'Run number ${{github.run_number}}'
        echo '${{env.MY_VAR}}'
+       echo '${{vars.USERNAME}}'
       
